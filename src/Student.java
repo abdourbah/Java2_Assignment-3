@@ -60,9 +60,34 @@ public class Student {
             sum += score;
         }
         return (double) sum / scores.length;
-
-
     }
+    //Create a method for finding the highest score
+    public int findHighestScore() {
+        /* Implementing the logic by assuming the first score is the highest
+        * highest score changes whenever a greater score is encounter via looping through the scores
+        *
+        * */
+
+        int highest = scores[0];
+        for (int score : scores) {
+            if (score > highest)
+                highest = score;
+        }
+        return highest;
+    }
+
+    //create a method to find the lowest score
+    public int findLowestScore() {
+        int lowest = scores[0];
+        for (int i = 0; i < scores.length; i++) {
+            if (scores[i] < lowest) {
+                lowest = scores[i];
+            }
+        }
+        return lowest;
+    }
+
+
 }
 
 

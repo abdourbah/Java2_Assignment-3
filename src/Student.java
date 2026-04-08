@@ -87,6 +87,53 @@ public class Student {
         return lowest;
     }
 
+    // method to calculate if a student passed
+    public boolean isPassed () {
+        if (calculateAverage() >= 50) {
+            return true;
+        } else {
+            return false;
+        }
+        }
+    // method to get the grades (Bonus question)
+    public String getGrade() {
+        double avg = calculateAverage();
+        //Using if-else statements in logic
+        if (avg >= 80) {
+            return "A";
+        } else if (avg >= 70) {
+            return "B";
+        } else if (avg >= 60) {
+            return "C";
+        } else if (avg >= 50) {
+            return "D";
+        } else if (avg >= 40) {
+            return "E";
+        }else {
+            return "F";
+        }
+    }
+
+    // create a method to display the student's information
+    public void displayStudentInfo() {
+        System.out.println("Student ID: " + id);
+        System.out.println("Name: " + name);
+        System.out.println("Level: " + level);
+
+        System.out.print("Scores: ");
+        for (int i = 0; i < scores.length; i ++) {
+            System.out.print(scores[i] + " ");
+        }
+        System.out.println();
+
+        System.out.println("Average: " + calculateAverage());
+        System.out.println("Grade: " + getGrade());// this is the bonus question
+        System.out.println("Highest Score: " + findHighestScore());
+        System.out.println("Lowest Score: " + findLowestScore());
+        System.out.println("Passed: " + isPassed());
+        System.out.println("--------------------------------------------");
+    }
+
 
 }
 

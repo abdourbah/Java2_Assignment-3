@@ -11,7 +11,7 @@ public class Main {
         students.add(new Student(2002, "Lamin", Level.FOURTH_YEAR, new int[]{85, 75, 95}));
         students.add(new Student(2003, "Kumba", Level.THIRD_YEAR, new int[]{50, 35, 40}));
         students.add(new Student(2004, "Isatou", Level.SECOND_YEAR, new int[]{30, 35, 25}));
-        students.add(new Student(2005, "Isatou", Level.FOURTH_YEAR, new int[]{75, 60, 55}));
+        students.add(new Student(2005, "Cherno", Level.FOURTH_YEAR, new int[]{75, 60, 55}));
 
         // Task A: Display all students
         System.out.println("List of all added students: ");
@@ -63,9 +63,6 @@ public class Main {
         }
         System.out.println("# of passed students: " + pass);
         System.out.println("# of failed students: " + fail);
-
-
-
 
 
     }

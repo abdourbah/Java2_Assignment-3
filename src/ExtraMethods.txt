@@ -1,0 +1,23 @@
+Method Name: getGrade()
+
+Explanation:
+Thios method calculates a student's grade by assignning a letter to it based on the student's average score.
+It returns grades from A to F based on average performance.
+
+Reason:
+I added this method to help assign letters to the numerical grades to help identify each score average correspons to what grade letter.
+This adds more information to the students scores.
+
+...........................................................................................
+
+Method Name: countScoresAbove70()
+
+Explanation:
+
+This method counts how many scores that are above 70 was scored by an individual student. It loops through the scores and increases the counter each time a scored above 70 is met and then returns the total count.
+
+Reason for Adding:
+
+I simply added this method to check consistencies  or level of performance of each student in different subjects.
+It will help know if a student has understand many of his or her courses or subjects by scoring above 70.
+

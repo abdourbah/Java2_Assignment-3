@@ -130,8 +130,20 @@ public class Student {
         System.out.println("Grade: " + getGrade());// this is the bonus question
         System.out.println("Highest Score: " + findHighestScore());
         System.out.println("Lowest Score: " + findLowestScore());
+        System.out.println("Scores above 70: " + countScoresAbove70()); // Bonus or extra method as required in the assignment
         System.out.println("Passed: " + isPassed());
         System.out.println("--------------------------------------------");
+    }
+
+    // Extra method to count scores above 70
+    public int countScoresAbove70() {
+        int count = 0;
+        for (int i = 0 ;i < scores.length; i ++) {
+            if (scores[i] > 70) {
+                count++;
+            }
+        }
+        return count;
     }
 
 
